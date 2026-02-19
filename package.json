@@ -1,0 +1,41 @@
+{
+  "name": "lemniscus-light",
+  "version": "0.1.0",
+  "description": "Local health data MCP server. Your wearable data + LLM memory, on your device.",
+  "type": "module",
+  "bin": {
+    "lemniscus-light": "./build/src/index.js",
+    "lemniscus-light-ingest": "./build/scripts/ingest.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/src/index.js",
+    "ingest": "node build/scripts/ingest.js",
+    "test": "npm run build && node --test build/test/*.test.js"
+  },
+  "files": [
+    "build"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "health",
+    "apple-health",
+    "sqlite",
+    "fts5",
+    "claude",
+    "llm"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "better-sqlite3": "^12.6.2",
+    "sax": "^1.4.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.0",
+    "@types/sax": "^1.2.7",
+    "typescript": "^5.9.3"
+  }
+}

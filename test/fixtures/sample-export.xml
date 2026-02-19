@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HealthData [
+<!ATTLIST Record type CDATA #REQUIRED>
+<!ATTLIST Record unit CDATA #IMPLIED>
+<!ATTLIST Record value CDATA #IMPLIED>
+<!ATTLIST Record sourceName CDATA #IMPLIED>
+<!ATTLIST Record startDate CDATA #REQUIRED>
+<!ATTLIST Record endDate CDATA #IMPLIED>
+<!ATTLIST Workout workoutActivityType CDATA #REQUIRED>
+<!ATTLIST Workout duration CDATA #IMPLIED>
+<!ATTLIST Workout durationUnit CDATA #IMPLIED>
+<!ATTLIST Workout totalEnergyBurned CDATA #IMPLIED>
+<!ATTLIST Workout startDate CDATA #REQUIRED>
+<!ATTLIST Workout endDate CDATA #IMPLIED>
+]>
+<HealthData locale="en_US">
+ <ExportDate value="2024-01-17 12:00:00 -0700"/>
+
+ <!-- Day 1: 2024-01-15 — Activity -->
+ <Record type="HKQuantityTypeIdentifierStepCount" sourceName="iPhone" unit="count" value="4500" startDate="2024-01-15 08:00:00 -0700" endDate="2024-01-15 09:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierStepCount" sourceName="iPhone" unit="count" value="3200" startDate="2024-01-15 12:00:00 -0700" endDate="2024-01-15 13:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierStepCount" sourceName="iPhone" unit="count" value="6530" startDate="2024-01-15 17:00:00 -0700" endDate="2024-01-15 18:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierDistanceWalkingRunning" sourceName="iPhone" unit="km" value="3.2" startDate="2024-01-15 08:00:00 -0700" endDate="2024-01-15 09:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierDistanceWalkingRunning" sourceName="iPhone" unit="km" value="2.1" startDate="2024-01-15 12:00:00 -0700" endDate="2024-01-15 13:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierDistanceWalkingRunning" sourceName="iPhone" unit="km" value="4.5" startDate="2024-01-15 17:00:00 -0700" endDate="2024-01-15 18:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Apple Watch" unit="kcal" value="487" startDate="2024-01-15 00:00:00 -0700" endDate="2024-01-15 23:59:59 -0700"/>
+ <Record type="HKQuantityTypeIdentifierFlightsClimbed" sourceName="iPhone" unit="count" value="12" startDate="2024-01-15 08:00:00 -0700" endDate="2024-01-15 18:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierAppleExerciseTime" sourceName="Apple Watch" unit="min" value="45" startDate="2024-01-15 07:00:00 -0700" endDate="2024-01-15 07:45:00 -0700"/>
+
+ <!-- Day 1: 2024-01-15 — Vitals -->
+ <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Apple Watch" unit="count/min" value="62" startDate="2024-01-15 06:30:00 -0700" endDate="2024-01-15 06:30:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Apple Watch" unit="count/min" value="78" startDate="2024-01-15 10:00:00 -0700" endDate="2024-01-15 10:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Apple Watch" unit="count/min" value="142" startDate="2024-01-15 07:30:00 -0700" endDate="2024-01-15 07:30:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Apple Watch" unit="count/min" value="55" startDate="2024-01-15 23:00:00 -0700" endDate="2024-01-15 23:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierRestingHeartRate" sourceName="Apple Watch" unit="count/min" value="53" startDate="2024-01-15 00:00:00 -0700" endDate="2024-01-15 23:59:59 -0700"/>
+ <Record type="HKQuantityTypeIdentifierHeartRateVariabilitySDNN" sourceName="Apple Watch" unit="ms" value="45" startDate="2024-01-15 06:00:00 -0700" endDate="2024-01-15 06:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierOxygenSaturation" sourceName="Apple Watch" unit="%" value="97" startDate="2024-01-15 03:00:00 -0700" endDate="2024-01-15 03:00:00 -0700"/>
+
+ <!-- Day 2: 2024-01-16 — Activity (low day) -->
+ <Record type="HKQuantityTypeIdentifierStepCount" sourceName="iPhone" unit="count" value="2100" startDate="2024-01-16 10:00:00 -0700" endDate="2024-01-16 11:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierStepCount" sourceName="iPhone" unit="count" value="2100" startDate="2024-01-16 15:00:00 -0700" endDate="2024-01-16 16:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Apple Watch" unit="kcal" value="120" startDate="2024-01-16 00:00:00 -0700" endDate="2024-01-16 23:59:59 -0700"/>
+
+ <!-- Day 2: 2024-01-16 — Vitals -->
+ <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Apple Watch" unit="count/min" value="68" startDate="2024-01-16 09:00:00 -0700" endDate="2024-01-16 09:00:00 -0700"/>
+ <Record type="HKQuantityTypeIdentifierRestingHeartRate" sourceName="Apple Watch" unit="count/min" value="58" startDate="2024-01-16 00:00:00 -0700" endDate="2024-01-16 23:59:59 -0700"/>
+
+ <!-- Day 3: 2024-01-17 — Body -->
+ <Record type="HKQuantityTypeIdentifierBodyMass" sourceName="Withings" unit="kg" value="74.2" startDate="2024-01-17 07:00:00 -0700" endDate="2024-01-17 07:00:00 -0700"/>
+
+ <!-- Workout -->
+ <Workout workoutActivityType="HKWorkoutActivityTypeRunning" duration="45.5" durationUnit="min" totalEnergyBurned="380" startDate="2024-01-15 07:00:00 -0700" endDate="2024-01-15 07:45:30 -0700"/>
+ <Workout workoutActivityType="HKWorkoutActivityTypeYoga" duration="30" durationUnit="min" totalEnergyBurned="95" startDate="2024-01-16 18:00:00 -0700" endDate="2024-01-16 18:30:00 -0700"/>
+
+</HealthData>
