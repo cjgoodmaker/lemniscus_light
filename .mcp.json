@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "lemniscus": {
+      "command": "node",
+      "args": ["/Users/charlesgoodmaker/Developer/lemniscus_light/build/src/index.js"]
+    }
+  }
+}

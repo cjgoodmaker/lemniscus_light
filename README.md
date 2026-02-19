@@ -45,7 +45,7 @@ You'll see progress as it parses and summarises your data.
 
 ### 2. Configure your MCP client
 
-Add to your Claude Code `.mcp.json` (or Claude Desktop config):
+Create a `.mcp.json` file in the `lemniscus_light` directory (the directory where you run `claude`):
 
 ```json
 {
@@ -57,6 +57,12 @@ Add to your Claude Code `.mcp.json` (or Claude Desktop config):
   }
 }
 ```
+
+> Tip: run `pwd` inside the `lemniscus_light` directory to get the absolute path to use above.
+
+Then restart Claude Code — it will pick up the new MCP server automatically.
+
+For **Claude Desktop**, add the same block to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows).
 
 ### 3. Ask questions
 
